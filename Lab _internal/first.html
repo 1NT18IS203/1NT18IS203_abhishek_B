@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>E-Waste Management System</title>
+    </head>
+    <body>
+        <h1 style="text-align:center; color: rgb(226, 23, 23); background-color: #2dadd4;">E-Waste Management System</h1>
+        <p style="text-align: justify; width: 1000px; margin: 0 25%; font-size:120%;">Every year, an estimated 11.2 billion tonnes of solid waste is collected worldwide and decay of the organic proportion of solid waste is contributing about 5 per cent of global greenhouse gas emissions. Of all the waste streams, waste from electrical and electronic equipment containing new and complex hazardous substances presents the fastest-growing challenge in both developed and developing countries.
+        </p>
+        <h2 style="text-align: center;">Say No To Electronic Waste</h2>
+        <h3 style="text-align: center;">Hand-Over Your E-waste</h3>
+        <form style="margin: 0 25%;">
+            <label for="type">Get to know about the Dealer:</label>
+            <br>
+            <br>
+            <select id="waste-type" name="waste-type">
+                <option value="Major Appliances">Major Appliances</option>
+                <option value="Small Appliances">Small Appliances</option>
+                <option value="Telecom Appliances">Telecom Appliances</option>
+            </select>
+            <br>
+            <br>
+            <input type="button" value="submit" onclick="getValues()">
+        </form>
+
+        <form style="margin: 0 25%;">
+            <h3>Contact Details</h3>
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="contact-number">Contact number</label><br>
+            <input type="text" id="contact-number" name="contact-number"><br><br>
+            <label for="area">Area</label><br>
+            <input type="text" id="area" name="area">
+        </form>
+
+        <br><br><h3 style="text-align: center;">Provide Your Information:</h3>
+
+        <form style="margin: 0 25%;">
+            <h4>Details</h3>
+            <label for="newname">Name</label><br>
+            <input type="text" id="newname" name="newname"><br><br>
+            <label for="newname">What do you deal in?</label><br>
+            <br>
+            <select id="new-waste-type" name="waste-type">
+                <option value="Major Appliances">Major Appliances</option>
+                <option value="Small Appliances">Small Appliances</option>
+                <option value="Telecom Appliances">Telecom Appliances</option>
+            </select>
+            <br>
+            <br>
+            <label for="new-contact-number">Contact number</label><br>
+            <input type="text" id="new-contact-number" name="new-contact-number"><br><br>
+            <label for="newarea">Area</label><br>
+            <input type="text" id="newarea" name="newarea"><br><br>
+            <input type="button" value="submit" onclick="submitDetails()">
+        </form>
+        <br>
+        <br>
+    </body>
+    <script src="index.js"></script>
+</html>
